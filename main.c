@@ -1,19 +1,22 @@
 #include "io.h"
 #include "math.h"
+#include "date.h"
 
 
 void task01_CalculateMatrixProduct();
 void task02();
 void task03();
 void task04();
+void task05_readAndPrintDateStruct();
 
 
 int main() {
 
-    task01_CalculateMatrixProduct();
+    //task01_CalculateMatrixProduct();
     //task02();
     //task03();
     //task04();
+    task05_readAndPrintDateStruct();
 
     return 0;
 }
@@ -87,4 +90,21 @@ void task04() {
         printInt(frequencies[i]);
         printlnString(" mal");
     }
+}
+
+
+void task05_readAndPrintDateStruct() {
+    Date date;
+
+    date.day = readIntFromCommandline();
+    date.month = readIntFromCommandline();
+    date.year = readIntFromCommandline();
+
+    printString("Das Datum ist der ");
+    printInt(date.day);
+    printString(".");
+    printInt(date.month);
+    printString(".");
+    printInt(date.year);
+    printlnString(".");
 }
