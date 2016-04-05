@@ -17,6 +17,12 @@ int readIntFromCommandline() {
     return input;
 }
 
+void readIntArray(int inputArray[], int arrayLength) {
+    for(int i = 0; i < arrayLength; i++) {
+        inputArray[i] = readIntFromCommandline();
+    }
+}
+
 int printTextAndReadIntFromCommandline(char* text) {
     printlnString(text);
 
@@ -34,6 +40,14 @@ float readFloatFromCommandline() {
 void readFloatArray(float inputArray[], int arrayLength) {
     for(int i = 0; i < arrayLength; i++) {
         inputArray[i] = readFloatFromCommandline();
+    }
+}
+
+void readFloatMatrix(float* matrix, int countColumns, int countRows) {
+    for(int row = 0; row <= countRows; row++) {
+        for(int column = 0; column < countColumns; column++) {
+            matrix[row * countColumns + column] = readFloatFromCommandline();
+        }
     }
 }
 

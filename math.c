@@ -36,3 +36,14 @@ void findMaximumInFloatArray(float array[], int arrayLength, float* maximum, int
         }
     }
 }
+
+
+void calculateFrequenciesOfIntsFrom0To5(int inputArray[], int arrayLength, int frequencies[], int maxNumber) {
+    for(int i = 0; i <= maxNumber; i++) {
+        frequencies[i] = 0;
+    }
+
+    for(int i = 0; i < arrayLength; i++) {
+        frequencies[inputArray[i]] = frequencies[inputArray[i]] + 1;
+    }
+}

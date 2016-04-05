@@ -12,10 +12,14 @@ int readIntFromCommandline();
 
 int printTextAndReadIntFromCommandline(char* text);
 
+void readIntArray(int inputArray[], int arrayLength);
+
 
 float readFloatFromCommandline();
 
 void readFloatArray(float inputArray[], int arrayLength);
+
+void readFloatMatrix(float* matrix, int countColumns, int countRows);
 
 
 /*      Output      */
