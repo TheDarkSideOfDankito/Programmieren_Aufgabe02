@@ -4,9 +4,9 @@
 
 
 void task01_CalculateMatrixProduct();
-void task02();
-void task03();
-void task04();
+void task02_CalculateArithmeticMean();
+void task03_CalculateMaximum();
+void task04_Histogram();
 void task05_readAndPrintDateStruct();
 void task06_SigmoidFunction();
 
@@ -14,9 +14,9 @@ void task06_SigmoidFunction();
 int main() {
 
     //task01_CalculateMatrixProduct();
-    //task02();
-    //task03();
-    //task04();
+    //task02_CalculateArithmeticMean();
+    //task03_CalculateMaximum();
+    //task04_Histogram();
     //task05_readAndPrintDateStruct();
     task06_SigmoidFunction();
 
@@ -39,7 +39,7 @@ void task01_CalculateMatrixProduct() {
     printFloatMatrix(countColumns, countRows, result);
 }
 
-void task02() {
+void task02_CalculateArithmeticMean() {
     int arrayLength = printTextAndReadIntFromCommandline("Wie viele Zahlen möchten Sie eingeben?");
 
     float inputArray[arrayLength];
@@ -55,7 +55,7 @@ void task02() {
 }
 
 
-void task03() {
+void task03_CalculateMaximum() {
     int arrayLength = printTextAndReadIntFromCommandline("Wie viele Zahlen möchten Sie eingeben?");
 
     float inputArray[arrayLength];
@@ -75,7 +75,7 @@ void task03() {
 }
 
 
-void task04() {
+void task04_Histogram() {
     int arrayLength = 10;
     int inputArray[arrayLength];
 
