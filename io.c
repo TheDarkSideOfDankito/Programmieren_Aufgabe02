@@ -43,10 +43,10 @@ void readFloatArray(float inputArray[], int arrayLength) {
     }
 }
 
-void readFloatMatrix(float* matrix, int countColumns, int countRows) {
-    for(int row = 0; row <= countRows; row++) {
+void readFloatMatrix(int countColumns, int countRows, float (*matrix)[countRows]) {
+    for(int row = 0; row < countRows; row++) {
         for(int column = 0; column < countColumns; column++) {
-            matrix[row * countColumns + column] = readFloatFromCommandline();
+            matrix[row][column] = readFloatFromCommandline();
         }
     }
 }
@@ -80,18 +80,6 @@ void printlnInt(int output) {
     println();
 }
 
-/*
-void printIntMatrix(int** inputMatrix, int countColumns, int countRows) {
-    for(int row = 0; row < countRows ; row++) {
-        for (int column = 0; column < countColumns; column++) {
-            printf("%d ", inputMatrix[row][column]);
-        }
-
-        printf("\r\n");
-    }
-}
- */
-
 
 void printFloat(float output) {
     printf("%f", output);
@@ -108,4 +96,15 @@ void printFloatArray(int array[], int arrayLength) {
     }
 
     printf("\r\n");
+}
+
+void printFloatMatrix(int countColumns, int countRows, float (*matrix)[countRows]) {
+    for(int row = 0; row < countRows; row++) {
+        for(int column = 0; column < countColumns; column++) {
+            printFloat(matrix[row][column]);
+            printString(" ");
+        }
+
+        println();
+    }
 }

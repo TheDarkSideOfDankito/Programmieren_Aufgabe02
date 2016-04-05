@@ -10,17 +10,28 @@ void task04();
 
 int main() {
 
-    //task01_CalculateMatrixProduct();
+    task01_CalculateMatrixProduct();
     //task02();
     //task03();
-    task04();
+    //task04();
 
     return 0;
 }
 
 
 void task01_CalculateMatrixProduct() {
+    int countColumns = 2;
+    int countRows = 2;
+    float inputMatrixA[countRows][countColumns];
+    float inputMatrixB[countRows][countColumns];
 
+    readFloatMatrix(countColumns, countRows, inputMatrixA);
+    readFloatMatrix(countColumns, countRows, inputMatrixB);
+
+    float result[countRows][countColumns];
+    multiplyFloatMatrices(countColumns, countRows, inputMatrixA, inputMatrixB, result);
+
+    printFloatMatrix(countColumns, countRows, result);
 }
 
 void task02() {

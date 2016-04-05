@@ -19,7 +19,8 @@ float readFloatFromCommandline();
 
 void readFloatArray(float inputArray[], int arrayLength);
 
-void readFloatMatrix(float* matrix, int countColumns, int countRows);
+// oh C, you're really an old, old language. Such a complicated Syntax for not such a complicated problem!
+void readFloatMatrix(int countColumns, int countRows, float (*matrix)[countRows]);
 
 
 /*      Output      */
@@ -36,14 +37,14 @@ void printInt(int output);
 
 void printlnInt(int output);
 
-//void printIntMatrix(int* inputMatrix, int countColumns, int countRows);
-
 
 void printFloat(float output);
 
 void printlnFloat(float output);
 
 void printFloatArray(int array[], int arrayLength);
+
+void printFloatMatrix(int countColumns, int countRows, float (*matrix)[countRows]);
 
 
 #endif //INC_02_IO_H

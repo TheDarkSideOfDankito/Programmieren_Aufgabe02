@@ -47,3 +47,19 @@ void calculateFrequenciesOfIntsFrom0To5(int inputArray[], int arrayLength, int f
         frequencies[inputArray[i]] = frequencies[inputArray[i]] + 1;
     }
 }
+
+
+void multiplyFloatMatrices(int countColumns, int countRows, float (*inputMatrixA)[countRows], float (*inputMatrixB)[countRows], float (*resultMatrix)[countRows]) {
+    float sum = 0;
+
+    for(int row = 0; row < countRows; row++) {
+        for(int column = 0; column < countColumns; column++) {
+            for (int k = 0; k < countColumns; k++) {
+                sum = sum + inputMatrixA[row][k] * inputMatrixB[k][column];
+            }
+
+            resultMatrix[row][column] = sum;
+            sum = 0;
+        }
+    }
+}
