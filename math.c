@@ -2,6 +2,7 @@
 // Created by ganymed on 05/04/16.
 //
 
+#include <math.h>
 #include "math.h"
 
 
@@ -62,4 +63,9 @@ void multiplyFloatMatrices(int countColumns, int countRows, float (*inputMatrixA
             sum = 0;
         }
     }
+}
+
+
+float calculateSigmoid(float input) {
+    return 1 / (1 + expf((-1) * input));
 }

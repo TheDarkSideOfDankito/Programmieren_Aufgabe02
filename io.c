@@ -82,11 +82,22 @@ void printlnInt(int output) {
 
 
 void printFloat(float output) {
-    printf("%f", output);
+    printFloat_LimitDecimalPlaces(output, 6);
+}
+
+void printFloat_LimitDecimalPlaces(float output, int countDecimalPlaces) {
+    char format[] = "%.4f";
+    format[2] = 48 + countDecimalPlaces;
+    printf(format, output);
 }
 
 void printlnFloat(float output) {
     printFloat(output);
+    println();
+}
+
+void printlnFloat_LimitDecimalPlaces(float output, int countDecimalPlaces) {
+    printFloat_LimitDecimalPlaces(output, countDecimalPlaces);
     println();
 }
 

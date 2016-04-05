@@ -40,7 +40,11 @@ void printlnInt(int output);
 
 void printFloat(float output);
 
+void printFloat_LimitDecimalPlaces(float output, int countDecimalPlaces);
+
 void printlnFloat(float output);
+
+void printlnFloat_LimitDecimalPlaces(float output, int countDecimalPlaces);
 
 void printFloatArray(int array[], int arrayLength);
 

@@ -8,6 +8,7 @@ void task02();
 void task03();
 void task04();
 void task05_readAndPrintDateStruct();
+void task06_SigmoidFunction();
 
 
 int main() {
@@ -16,7 +17,8 @@ int main() {
     //task02();
     //task03();
     //task04();
-    task05_readAndPrintDateStruct();
+    //task05_readAndPrintDateStruct();
+    task06_SigmoidFunction();
 
     return 0;
 }
@@ -107,4 +109,18 @@ void task05_readAndPrintDateStruct() {
     printString(".");
     printInt(date.year);
     printlnString(".");
+}
+
+
+void task06_SigmoidFunction() {
+    int countNumbers = 11;
+    float numbersToCalculateSigmoidFunctionFor[] = { 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 };
+
+    for(int i = 0; i < countNumbers; i++) {
+        float number = numbersToCalculateSigmoidFunctionFor[i];
+
+        printFloat(number);
+        printString(" : ");
+        printlnFloat_LimitDecimalPlaces(calculateSigmoid(number), 4);
+    }
 }

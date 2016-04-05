@@ -16,5 +16,7 @@ void calculateFrequenciesOfIntsFrom0To5(int inputArray[], int arrayLength, int f
 // really, a very nice Syntax, C!
 void multiplyFloatMatrices(int countColumns, int countRows, float (*inputMatrixA)[countRows], float (*inputMatrixB)[countRows], float (*resultMatrix)[countRows]);
 
+float calculateSigmoid(float input);
+
 
 #endif //INC_02_MATH_H
