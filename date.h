@@ -2,8 +2,8 @@
 // Created by ganymed on 05/04/16.
 //
 
-#ifndef INC_02_DATE_H
-#define INC_02_DATE_H
+#ifndef INC_DATE_H
+#define INC_DATE_H
 
 typedef struct Date {
     int day;
@@ -11,4 +11,4 @@ typedef struct Date {
     int year;
 } Date;
 
-#endif //INC_02_DATE_H
+#endif //INC_DATE_H

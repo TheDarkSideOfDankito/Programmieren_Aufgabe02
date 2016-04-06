@@ -2,8 +2,8 @@
 // Created by ganymed on 05/04/16.
 //
 
-#ifndef INC_02_IO_H
-#define INC_02_IO_H
+#ifndef INC_IO_H
+#define INC_IO_H
 
 
 /*      Input       */
@@ -51,4 +51,4 @@ void printFloatArray(int array[], int arrayLength);
 void printFloatMatrix(int countColumns, int countRows, float (*matrix)[countRows]);
 
 
-#endif //INC_02_IO_H
+#endif //INC_IO_H

@@ -2,8 +2,8 @@
 // Created by ganymed on 05/04/16.
 //
 
-#ifndef INC_02_MATH_H
-#define INC_02_MATH_H
+#ifndef INC_MATH_H
+#define INC_MATH_H
 
 
 float calculateArithmeticMean(float array[], int arrayLength);
@@ -19,4 +19,4 @@ void multiplyFloatMatrices(int countColumns, int countRows, float (*inputMatrixA
 float calculateSigmoid(float input);
 
 
-#endif //INC_02_MATH_H
+#endif //INC_MATH_H
